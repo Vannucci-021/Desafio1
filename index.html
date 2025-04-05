@@ -1,54 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
-        <link rel="shortcut icon" href="favicon/dnc-favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css" />
-        <title>Desafio 1</title>
-    </head>
-    <body>
-        <!-- MENU SUPERIOR -->
-        <div id="menu-superior">
-            <h1 id="titulo-menusuperior">Tradição em projetos de arquitetura</h1>
-            <p id="texto-menusuperior">Arquitetura residencial e comercial. </p>
-        </div>
-        <!-- MENU INFORMATIVO -->
-        <div id="menu-informativo">
-            <p> <b class="numero">850</b> <br>
-            empreendimentos construídos </p>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <p> <b class="numero">40</b> <br>
-            anos de mercado e experiência </p>
+    <!-- Fonte Importada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-            <p> <b class="numero">2,000,000</b> <br>
-            m² em projetos construídos</p>
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="favicon/dnc-favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title> Desafio 1 </title>
+  </head>
+  <body>
+
+    <!-- MENU SUPERIOR -->
+    <div id="menu-superior">
+        <!-- Titulo menu superior -->
+        <h1>Tradição em projetos de arquitetura</h1>
+    
+        <!-- Texto Menu superior -->
+        <p>Arquitetura residencial e comercial.</p>
+    </div>
+    
+    <!-- MENU INFORMATIVO -->
+    <div id="menu-informativo">
+    <!-- Numeros e textos  -->
+      <p>
+        <b>850</b> <br />
+        empreendimentos construídos
+      </p>
+
+      <p>
+        <b>40</b> <br />
+        anos de mercado e experiência
+      </p>
+
+      <p>
+        <b>2,000,000</b> <br />
+        m² em projetos construídos
+      </p>
+
+    </div>
+    
+    <!-- MENU EXPLICAÇÃO -->
+    <div id="menu-explicacao">
+      <div class="container-titleAndText">
+
+        <!-- Titulo -->
+        <h2>
+          Arquitetos com História e Experiência
+        </h2>
+
+        <!-- Parágrafo -->
+        <p>
+          Nós realizamos desde 2002 projetos e gerenciamento de obras.
+          Com mais de 800 projetos e 2.000.000 de m² construídos, tendo
+          como principal proposta transformar em realidade os sonhos de
+          seus clientes, criando projetos personalizados, unindo a tradição
+          e a modernidade em nossos projetos.
+        </p>
+      </div>
+
+      <!-- Div Foto Menu explicação -->
+        <div id="imagem-menu-explicacao">
+          <img
+          id="foto"
+          src="imagens/img-menuexplicacao.svg"
+          alt="img-menuexplicacao"
+          />
         </div>
-        <!-- MENU EXPLICAÇÃO -->
-        <div id="menu-explicacao">
-            <div>
-            <h1 id="titulo-menuexplicacao">Arquitetos com História e Experiência.</h1> <br>
-            <p id="texto-menuexplicacao">Nós realizamos desde 2002 projetos e gerenciamento de obras. <br>
-            Com mais de 800 projetos e 2.000.000 de m² construídos, tendo <br>
-            como principal proposta transformar em realidade os sonhos de <br>
-            seus clientes, criando projetos personalizados, unindo a tradição <br>
-            e a modernidade em nossos projetos.</p>
-            </div>
-            <img id="foto" src="imagens/img-menuexplicacao.svg" alt="img-menuexplicacao">
-        </div>
-        <!-- FORMULÁRIO --> 
-        <div id="formulario">
-            <h1 id="titulo-formulario">Conheça mais sobre nossos serviços:</h1>
-            <form action="https://api.sheetmonkey.io/form/w8qXApr3gDALuYQBV7S9NQ" method="post">
-                <input type="text" name="Name" placeholder="Nome" required> <br>
-                <input type="email" name="Email" placeholder="Email" required> <br>
-                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                <button type="submit">Fale Conosco</button> 
-            </form>
-        </div>
-        <script src="function.js"></script>
-    </body>
+
+    </div>
+
+    <!-- Container Formulário -->
+    <div id="formulario">
+
+    <!-- Titulo  -->
+      <h2 id="titulo-formulario">Conheça mais sobre nossos serviços:</h2>
+    
+    <!-- Formulário -->
+      <form
+        action="https://api.sheetmonkey.io/form/w8qXApr3gDALuYQBV7S9NQ"
+        method="post"
+      >
+
+        <input type="text" name="Name" placeholder="Nome" required /> <br />
+      
+        <input type="email" name="Email" placeholder="Email" required /> <br />
+      
+        <input
+          type="hidden"
+          name="Created"
+          value="x-sheetmonkey-current-date-time"
+        />
+      
+      <!-- Botão -->
+        <button type="submit">Fale Conosco</button>
+      </form>
+
+    </div>
+    
+  </body>
 </html>

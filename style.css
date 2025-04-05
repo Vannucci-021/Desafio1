@@ -3,38 +3,46 @@
     margin: 0px;
 }
 
+:root {
+    --background-white: #F9F9F9;
+    --background-gray: #303030;
+    --hover-button: #2b2a33de;
+}
+
+/* Menu superior Config */
 #menu-superior{
     color: white;
-    background-color: #303030;
+    background-color: var(--background-gray);
 }
 
-#titulo-menusuperior{
-    padding-top: 150px;
-    padding-left: 60px;
-    font-size: 50px;
-}
+/* texts */
+    #menu-superior h1{
+        padding: 150px 0 0 60px;
+        font-size: 50px;
+    }
 
-#texto-menusuperior{
-    padding: 15px 0px 120px 60px;
-    font-size: 17px;
-}
+    #menu-superior p{
+        padding: 15px 0px 120px 60px;
+        font-size: 17px;
+    }
 
+/* Menu Informativo Config */
 #menu-informativo{
-    background-color: #F9F9F9;
+    background-color: var(--background-white);
     display: grid;
     grid-auto-flow: column;
     columns: auto;
-    padding-top: 60px;
-    padding-left: 150px;
-    padding-bottom: 60px;
+    padding: 60px 0 60px 150px;
 }   
 
-.numero{
-    font-size: 35px;
-}
+/* text */
+   #menu-informativo b {
+        font-size: 35px;
+    }
 
+/* Menu Explicação Config */
 #menu-explicacao{
-    background-color: #F9F9F9;
+    background-color: var(--background-white);
     display: grid;
     grid-auto-flow: column;
     columns: auto;
@@ -42,58 +50,63 @@
     margin-bottom: 50px;    
 }
 
-#titulo-menuexplicacao{
-    margin-top: 250px;
-    margin-left: 70px;
-}
+/* texts config */
+    #menu-explicacao h2{
+        font-size: 35px;
+        margin: 200px 0 0 70px;
+    }
 
-#texto-menuexplicacao{
-    margin-top: 25px;
-    margin-left: 70px;
-    font-size: 19px;
-}
+    #menu-explicacao p{
+        width: 75%;
+        font-size: 19px;
+        margin: 55px 0 0 70px;
+    }
 
-#foto{
-    margin-top: 60px;
-}
+/* Img */
+    #imagem-menu-explicacao{
+        margin: 60px 50px 0 0;
+    }
 
+/* Formulário Config */
 #formulario{
     text-align: center;
-    background-color: #303030;
+    background-color: var(--background-gray);
     padding-bottom: 100px;
 }
 
-#titulo-formulario{
-    color: white;
-    padding-top: 50px;
-    font-size: 25px;
-}
+/* Title */
+    #formulario h2{
+        color: white;
+        padding-top: 50px;
+        font-size: 35px;
+    }
 
-input{
-    color: #000000ed;
-    font-size: 18px;
-    padding-left: 22px;
-    margin-top: 35px;
-    width: 350px;
-    height: 50px;
-    border: 0px;
-    border-radius: 10px;
-}
+/* Inputs e Buttons */
+    input{
+        width: 350px;
+        height: 50px;
+        font-size: 18px;
+        padding-left: 22px;
+        margin-top: 35px;
+        border: 0px;
+        border-radius: 10px;
 
-button{
-    font-size: 20px;
-    font-weight: bolder;
-    margin-top: 25px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    background-color: #C07212;
-    border: 0px;
-    border-radius: 10px;
-}
+    }
 
-button:hover{
-    transform: translateY(-5px);
-    transition-duration: 1s;
-    box-shadow: 0px 5px 5px 5px #0705125c;
-}
+    button{
+        font-size: 20px;
+        font-weight: bolder;
+        margin-top: 25px;
+        width: 200px;
+        height: 50px;
+        color: white;
+        background-color: #C07212;
+        border: 0px;
+        border-radius: 10px;
+    }
+
+        button:hover{
+            transform: translateY(-5px);
+            transition-duration: 1s;
+            box-shadow: 0px 5px 5px 5px var(--hover-button);
+        }
